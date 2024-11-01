@@ -1,0 +1,260 @@
+/* CSS Document */
+
+.wp_braintree_button .dialog-form {
+    display: none;
+}
+
+.wpb-form-control {
+    width: 100%;
+    display: inline-block;
+    height: 40px;
+    max-height: 40px;
+    padding: .5em .6em;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #666;
+    background: #fff;
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    font: inherit;
+    line-height: normal;
+}
+
+/* Braintree Hosted Fields styling classes*/
+.braintree-hosted-fields-focused { 
+    border: 1px solid #0275d8;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
+
+.braintree-hosted-fields-invalid {
+    border-color: tomato;
+}
+
+.braintree-hosted-fields-valid {
+    border-color: green;
+}
+
+.braintree-hosted-fields-focused.focused-invalid {
+    border: 1px solid #ebcccc;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(100,100,0,.6);
+}
+
+.pure-form.pure-form-aligned input {
+    width: auto;
+}
+
+div.wp-braintree-expiration-month, div.wp-braintree-expiration-year {
+    display: inline-block;
+    width: 45%;
+}
+div.wpb-slash {
+    display: inline-block;
+    height: 40px;
+    vertical-align: text-bottom;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Braintree 3D Secure container styling*/
+
+.wp-braintree-3ds-modal-container {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.wp-braintree-3ds-modal {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.wp-braintree-3ds-modal-header {
+    text-align: right;
+}
+
+.wp-braintree-3ds-modal-content {
+    text-align: center;
+}
+
+.wp-braintree-3ds-modal-close-btn {
+    color: #aaaaaa;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.wp-braintree-3ds-modal-close-btn:hover,
+.wp-braintree-3ds-modal-close-btn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Braintree spinner*/
+
+.wp-braintree-spinner-container{
+    display: block;
+    margin:0 auto;
+    width:97px;
+}
+
+.wp-braintree-spinner i{
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #0078e7;
+}
+.wp-braintree-spinner i:first-child{
+    opacity: 0;
+    animation:wp-braintree-spinner-ani2 0.58s linear infinite;
+    -o-animation:wp-braintree-spinner-ani2 0.58s linear infinite;
+    -ms-animation:wp-braintree-spinner-ani2 0.58s linear infinite;
+    -webkit-animation:wp-braintree-spinner-ani2 0.58s linear infinite;
+    -moz-animation:wp-braintree-spinner-ani2 0.58s linear infinite;
+    transform:translate(-19px);
+    -o-transform:translate(-19px);
+    -ms-transform:translate(-19px);
+    -webkit-transform:translate(-19px);
+    -moz-transform:translate(-19px);
+}
+.wp-braintree-spinner i:nth-child(2),
+.wp-braintree-spinner i:nth-child(3){
+    animation:wp-braintree-spinner-ani3 0.58s linear infinite;
+    -o-animation:wp-braintree-spinner-ani3 0.58s linear infinite;
+    -ms-animation:wp-braintree-spinner-ani3 0.58s linear infinite;
+    -webkit-animation:wp-braintree-spinner-ani3 0.58s linear infinite;
+    -moz-animation:wp-braintree-spinner-ani3 0.58s linear infinite;
+}
+.wp-braintree-spinner i:last-child{
+    animation:wp-braintree-spinner-ani1 0.58s linear infinite;
+    -o-animation:wp-braintree-spinner-ani1 0.58s linear infinite;
+    -ms-animation:wp-braintree-spinner-ani1 0.58s linear infinite;
+    -webkit-animation:wp-braintree-spinner-ani1 0.58s linear infinite;
+    -moz-animation:wp-braintree-spinner-ani1 0.58s linear infinite;
+}
+
+@keyframes wp-braintree-spinner-ani1{
+    100%{
+	transform:translate(39px);
+	opacity: 0;
+    }
+}
+
+@-o-keyframes wp-braintree-spinner-ani1{
+    100%{
+	-o-transform:translate(39px);
+	opacity: 0;
+    }
+}
+
+@-ms-keyframes wp-braintree-spinner-ani1{
+    100%{
+	-ms-transform:translate(39px);
+	opacity: 0;
+    }
+}
+
+@-webkit-keyframes wp-braintree-spinner-ani1{
+    100%{
+	-webkit-transform:translate(39px);
+	opacity: 0;
+    }
+}
+
+@-moz-keyframes wp-braintree-spinner-ani1{
+    100%{
+	-moz-transform:translate(39px);
+	opacity: 0;
+    }
+}
+
+@keyframes wp-braintree-spinner-ani2{
+    100%{
+	transform:translate(19px);
+	opacity: 1;
+    }
+}
+
+@-o-keyframes wp-braintree-spinner-ani2{
+    100%{
+	-o-transform:translate(19px);
+	opacity: 1;
+    }
+}
+
+@-ms-keyframes wp-braintree-spinner-ani2{
+    100%{
+	-ms-transform:translate(19px);
+	opacity: 1;
+    }
+}
+
+@-webkit-keyframes wp-braintree-spinner-ani2{
+    100%{
+	-webkit-transform:translate(19px);
+	opacity: 1;
+    }
+}
+
+@-moz-keyframes wp-braintree-spinner-ani2{
+    100%{
+	-moz-transform:translate(19px);
+	opacity: 1;
+    }
+}
+
+@keyframes wp-braintree-spinner-ani3{
+    100%{
+	transform:translate(19px);
+    }
+}
+
+@-o-keyframes wp-braintree-spinner-ani3{
+    100%{
+	-o-transform:translate(19px);
+    }
+}
+
+@-ms-keyframes wp-braintree-spinner-ani3{
+    100%{
+	-ms-transform:translate(19px);
+    }
+}
+
+@-webkit-keyframes wp-braintree-spinner-ani3{
+    100%{
+	-webkit-transform:translate(19px);
+    }
+}
+
+@-moz-keyframes wp-braintree-spinner-ani3{
+    100%{
+	-moz-transform:translate(19px);
+    }
+}
+
+/* ==========================================================================
+   Mobile styles.
+   ========================================================================== */
+
+@media (max-width: 800px) {
+    .wp-braintree-3ds-modal {
+	width: 100%;
+	height: 100%;
+    }
+    .wp-braintree-3ds-modal-container {
+	padding-top: 0;
+    }
+}
